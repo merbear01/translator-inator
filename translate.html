@@ -13,12 +13,11 @@
         <img src="translate-inator%20image.jpg" alt="Microphone" class="microphone" onclick="startRecognition()">
     </div>
     <textarea id="inputText" placeholder="Enter text here..."></textarea>
-    <button onclick="startCommandRecognition()">Speak Command</button>
-    <select id="languageSelect">
-        <option value="es">Spanish</option>
-        <option value="fr">French</option>
-        <option value="de">German</option>
-        <!-- Add more languages as needed -->
+    <select id="sourceLanguageSelect">
+        <!-- Source language options will be populated here -->
+    </select>
+    <select id="targetLanguageSelect">
+        <!-- Target language options will be populated here -->
     </select>
     <button onclick="translateText()">Translate</button>
     <div class="result">
