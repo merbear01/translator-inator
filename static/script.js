@@ -134,7 +134,9 @@ function handleRegister(event) {
     } else {
         localStorage.setItem(username, password);
         alert('Registration successful! You can now log in.');
-        window.location.href = 'index.html';
+        // window.location.href = 'index.html';
+        window.location.href = '/';
+
     }
 }
 
@@ -147,7 +149,9 @@ function handleLogin(event) {
     const storedPassword = localStorage.getItem(username);
     if (storedPassword && storedPassword === password) {
         alert('Login successful!');
-        window.location.href = 'translate.html';
+        // window.location.href = 'translate.html';
+        window.location.href = '/translate'
+
     } else {
         loginError.textContent = 'Invalid username or password';
     }

@@ -18,6 +18,14 @@ app.permanent_session_lifetime = timedelta(minutes=45)
 def home():
     return render_template('index.html')
 
+@app.route('/register')
+def login():
+    return render_template("register.html")
+
+@app.route('/translate')
+def trans():
+    return render_template('translate.html')
+
 
 if __name__ == "__main__":
     app.run(debug = True)

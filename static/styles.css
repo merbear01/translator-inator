@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(70, 13, 70);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .login-container, .container {
-    background: mediumpurple;
+    background: rgb(172, 93, 199);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -38,7 +38,7 @@ input[type="text"], input[type="password"], textarea, select, button {
 }
 
 button {
-    background: #007bff;
+    background: #4cc5e4;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -46,7 +46,7 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #4cc5e4;
 }
 
 .error {
