@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator-inator</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Translator</h1>
+    <div class="translator">
+        <img src="{{url_for('static', filename = 'img/mic.png') }}" alt="Microphone" class="microphone" onclick="startRecognition()">
+    </div>
+    <textarea id="inputText" placeholder="Enter text here..."></textarea>
+    <select id="sourceLanguageSelect">
+        <!-- Source language options will be populated here -->
+    </select>
+    <select id="targetLanguageSelect">
+        <!-- Target language options will be populated here -->
+    </select>
+    <button onclick="translateText()">Translate</button>
+    <div class="result">
+        <h2>Translation:</h2>
+        <p id="outputText"></p>
+    </div>
+    <button onclick="speakText()">Speak Translation</button>
+</div>
+<script src="{{url_for('static', filename = 'script.js') }}"></script>
+</body>
+</html>
